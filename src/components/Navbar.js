@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Stack, Button, Divider } from "@mui/material";
-import logo from "./img/logo.png";
+import logo from "./logo.png";
 
 export default function Navbar({ categoryList }) {
   const handleClick = (event) => {};

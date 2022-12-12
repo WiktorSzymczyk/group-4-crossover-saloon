@@ -2,11 +2,16 @@ import { client } from "./client";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
+
 import Damen from "./components/Damen";
 import Herren from "./components/Herren";
 import JuniorAndKider from "./components/JuniorAndKider";
+import Home from "./components/Home";
 
 import "./App.css";
+
+
+
 
 function App() {
   const [servicePrice, setServicePrice] = useState([]);
@@ -25,6 +30,7 @@ function App() {
   return (
     <div>
       <Navbar />
+
       <Routes>
         {servicePrice && (
           <Route path="/damen" element={<Damen service={servicePrice} />} />
@@ -39,6 +45,9 @@ function App() {
           />
         )}
       </Routes>
+
+      <Home />
+
     </div>
   );
 }
