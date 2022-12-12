@@ -41,7 +41,7 @@ export default function Navbar({ categoryList }) {
               class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
               href="#"
             >
-              Mens
+              <NavLink to="/herren">Herren</NavLink>
             </a>
           </li>
 
@@ -50,7 +50,16 @@ export default function Navbar({ categoryList }) {
               class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
               href="#"
             >
-              Women
+              <NavLink to="/damen">Damen</NavLink>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
+              href="#"
+            >
+              <NavLink to="/juniorAndKider">Juniors and Kinder</NavLink>
             </a>
           </li>
 
