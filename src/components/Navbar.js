@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Stack, Button, Divider } from "@mui/material";
-import logo from "../img/bg.png";
+import logo from "../img/logo.png";
 
 export default function Navbar({ categoryList }) {
   const handleClick = (event) => {};
@@ -14,10 +14,10 @@ export default function Navbar({ categoryList }) {
     <div class="bg-blue-500">
       <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
         <img src={logo} alt="logo" className="w-[10%]" />
-        <div class="lg:hidden">
+        <div className="lg:hidden">
           <button class="navbar-burger flex items-center text-blue-600 p-3">
             <svg
-              class="block h-4 w-4 fill-current"
+              className="block h-4 w-4 fill-current"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -56,7 +56,7 @@ export default function Navbar({ categoryList }) {
 
           <li>
             <a
-              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
+              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 whitespace-nowrap"
               href="#"
             >
               <NavLink to="/juniorAndKider">Juniors and Kinder</NavLink>
