@@ -11,11 +11,11 @@ export default function Navbar({ categoryList }) {
     //   spacing={2}
     //   mb={4}
     // >
-    <div class="bg-blue-500">
-      <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+    <div className="bg-blue-500">
+      <nav className="relative px-4 py-4 flex justify-between items-center bg-white">
         <img src={logo} alt="logo" className="w-[10%]" />
         <div className="lg:hidden">
-          <button class="navbar-burger flex items-center text-blue-600 p-3">
+          <button className="navbar-burger flex items-center text-blue-600 p-3">
             <svg
               className="block h-4 w-4 fill-current"
               viewBox="0 0 20 20"
@@ -26,11 +26,11 @@ export default function Navbar({ categoryList }) {
             </svg>
           </button>
         </div>
-        <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
             <a
-              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 font-bold"
-              href="#"
+              className="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 font-bold"
+              href="/"
             >
               Home
             </a>
@@ -38,7 +38,7 @@ export default function Navbar({ categoryList }) {
 
           <li>
             <a
-              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
+              className="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
               href="#"
             >
               <NavLink to="/herren">Herren</NavLink>
@@ -47,7 +47,7 @@ export default function Navbar({ categoryList }) {
 
           <li>
             <a
-              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
+              className="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
               href="#"
             >
               <NavLink to="/damen">Damen</NavLink>
@@ -56,7 +56,7 @@ export default function Navbar({ categoryList }) {
 
           <li>
             <a
-              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 whitespace-nowrap"
+              className="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 whitespace-nowrap"
               href="#"
             >
               <NavLink to="/juniorAndKider">Juniors and Kinder</NavLink>
@@ -65,7 +65,7 @@ export default function Navbar({ categoryList }) {
 
           <li>
             <a
-              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 whitespace-nowrap"
+              className="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 whitespace-nowrap"
               href="#"
             >
               Our Products
@@ -74,7 +74,7 @@ export default function Navbar({ categoryList }) {
 
           <li>
             <a
-              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
+              className="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
               href="#"
             >
               Appointment
@@ -83,7 +83,7 @@ export default function Navbar({ categoryList }) {
 
           <li>
             <a
-              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 whitespace-nowrap"
+              className="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 whitespace-nowrap"
               href="#"
             >
               Special Offers
@@ -92,7 +92,7 @@ export default function Navbar({ categoryList }) {
 
           <li>
             <a
-              class="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
+              className="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4"
               href="#"
             >
               Contact
@@ -100,13 +100,13 @@ export default function Navbar({ categoryList }) {
           </li>
         </ul>
       </nav>
-      <div class="navbar-menu relative z-50 hidden" onClick={handleClick}>
-        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-          <div class="flex items-center mb-8">
-            <button class="navbar-close">
+      <div className="navbar-menu relative z-50 hidden" onClick={handleClick}>
+        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+          <div className="flex items-center mb-8">
+            <button className="navbar-close">
               <svg
-                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -123,49 +123,49 @@ export default function Navbar({ categoryList }) {
           </div>
           <div id="nav-open-mobile" className="display-none">
             <ul>
-              <li class="mb-1">
+              <li className="mb-1">
                 <a
-                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="#"
                 >
                   Home
                 </a>
               </li>
-              <li class="mb-1">
+              <li className="mb-1">
                 <a
-                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="#"
                 >
                   Mens
                 </a>
               </li>
-              <li class="mb-1">
+              <li className="mb-1">
                 <a
-                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="#"
                 >
                   Women
                 </a>
               </li>
-              <li class="mb-1">
+              <li className="mb-1">
                 <a
-                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="#"
                 >
                   Our Products
                 </a>
               </li>
-              <li class="mb-1">
+              <li className="mb-1">
                 <a
-                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="#"
                 >
                   Appointment
                 </a>
               </li>
-              <li class="mb-1">
+              <li className="mb-1">
                 <a
-                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="#"
                 >
                   Special Offers
