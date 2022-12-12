@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "./bg.png";
+import bg from "../img/bg.png";
 import Contact from "./Contact";
 import Team from "./Team";
 
