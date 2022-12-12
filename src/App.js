@@ -10,44 +10,56 @@ import Home from "./components/Home";
 
 import "./App.css";
 
-
-
-
 function App() {
-  const [servicePrice, setServicePrice] = useState([]);
+  const [herren, setHerren] = useState([]);
+  const [damen, setDamen] = useState([]);
+  const [juniorAndKider, setjuniorAndKider] = useState([]);
 
   useEffect(() => {
     client
-      .getEntries({ "metadata.tags.sys.id[all]": "servicePrice" })
+      .getEntries({ "metadata.tags.sys.id[all]": "herren" })
       .then((entries) => {
-        setServicePrice(entries.items);
+        setHerren(entries.items);
+      })
+      .catch((err) => console.log(err));
+
+    client
+      .getEntries({ "metadata.tags.sys.id[all]": "damen" })
+      .then((entries) => {
+        setDamen(entries.items);
+      })
+      .catch((err) => console.log(err));
+
+    client
+      .getEntries({ "metadata.tags.sys.id[all]": "juniorAndKider" })
+      .then((entries) => {
+        setjuniorAndKider(entries.items);
       })
       .catch((err) => console.log(err));
   }, []);
 
-  console.log(servicePrice);
+  console.log("herren", herren);
+  console.log("damen", damen);
+  console.log("juniorAndKider", juniorAndKider);
 
   return (
     <div>
       <Navbar />
 
       <Routes>
-        {servicePrice && (
-          <Route path="/damen" element={<Damen service={servicePrice} />} />
+        {herren && (
+          <Route path="/herren" element={<Herren services={herren} />} />
         )}
-        {servicePrice && (
-          <Route path="/herren" element={<Herren service={servicePrice} />} />
-        )}
-        {servicePrice && (
+        {damen && <Route path="/damen" element={<Damen services={damen} />} />}
+        {juniorAndKider && (
           <Route
             path="/juniorAndKider"
-            element={<JuniorAndKider service={servicePrice} />}
+            element={<JuniorAndKider services={juniorAndKider} />}
           />
         )}
       </Routes>
 
       <Home />
-
     </div>
   );
 }
