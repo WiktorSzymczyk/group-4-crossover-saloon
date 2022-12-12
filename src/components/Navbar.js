@@ -15,7 +15,7 @@ export default function Navbar({ categoryList }) {
       <nav className="relative px-4 py-4 flex justify-between items-center bg-white">
         <img src={logo} alt="logo" className="w-[10%]" />
         <div className="lg:hidden">
-          <button class="navbar-burger flex items-center text-blue-600 p-3">
+          <button className="navbar-burger flex items-center text-blue-600 p-3">
             <svg
               className="block h-4 w-4 fill-current"
               viewBox="0 0 20 20"
@@ -30,7 +30,7 @@ export default function Navbar({ categoryList }) {
           <li>
             <a
               className="text-sm text-black-600 hover:text-gray-500 hover:border-2 hover:border-black hover:p-2 hover:underline hover:underline-offset-4 font-bold"
-              href="#"
+              href="/"
             >
               Home
             </a>

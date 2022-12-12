@@ -10,9 +10,6 @@ import Home from "./components/Home";
 
 import "./App.css";
 
-
-
-
 function App() {
   const [servicePrice, setServicePrice] = useState([]);
 
@@ -32,6 +29,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        <Route path="/" element={<Home />} />
         {servicePrice && (
           <Route path="/damen" element={<Damen service={servicePrice} />} />
         )}
@@ -45,9 +43,6 @@ function App() {
           />
         )}
       </Routes>
-
-      <Home />
-
     </div>
   );
 }
