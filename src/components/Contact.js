@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div>
-      <div className="p-6">
+    <div className="py-5 bg-[#d4d4d4]">
+      <div className="p-6 px-[10%]">
         <form>
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col">
